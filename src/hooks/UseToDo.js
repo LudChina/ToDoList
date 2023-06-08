@@ -48,7 +48,7 @@ export const useToDo = () => {
 
       const handleUpdateToDo = (id, description) => {
         const action = {
-            type: "Complete Todo",
+            type: "Update ToDo",
             payload: {
                 id,
                 description

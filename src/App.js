@@ -20,16 +20,21 @@ function App() {
      <div className='card-to-do'>
       <h1>Lista de Tareas</h1>
       <div className='counter-to-do'>
-        <h3>Nº de Tareas:</h3>
-        <h3>Pendientes:</h3>
+        <h3>Nº de Tareas: <span>{ToDosCount}</span></h3>
+        <h3>Pendientes: <span>{pendingToDosCount}</span></h3>
       </div>
 
      <div className='add-to-do'>
       <h3>Agregar Tarea</h3>
-      <ToDoAdd />
+      <ToDoAdd handleNewToDo={handleNewToDo} />
      </div>
 
-     <ToDoList />
+     <ToDoList 
+       ToDos={ToDos}
+       handleCompleteToDo={handleCompleteToDo}
+       handleDeleteToDo={handleDeleteToDo}
+       handleUpdateToDo={handleUpdateToDo}
+     />
      </div>
 
 
