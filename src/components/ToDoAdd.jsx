@@ -33,7 +33,7 @@ export const ToDoAdd = ({handleNewToDo}) => {
             placeholder="¿Que hay que hacer?" 
             />
 
-            <button className="btn-task" type="submit">Agregar</button>
+            <button className="btn-add" type="submit">Agregar</button>
         </form>
     );
 };

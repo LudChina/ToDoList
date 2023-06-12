@@ -8,7 +8,7 @@ export const ToDoItem = ({ToDo, handleUpdateToDo, handleCompleteToDo, handleDele
             <span
                 onClick={() => handleCompleteToDo(ToDo.id)} 
             >
-                <label className={`container-done ${ToDo.done ? 'active' : ''}`}></label>
+    <label className={`container-done ${ToDo.done ? 'active' : ''}`}></label>
             </span>
 
             <ToDoUpdate ToDo={ToDo} handleUpdateToDo={handleUpdateToDo} />
