@@ -2,6 +2,7 @@ import React from "react";
 import {FaTrash} from 'react-icons/fa';
 import { ToDoUpdate } from "./ToDoUpdate";
 
+//TAREA POR HACER (COMPLETAR O BORRAR)
 export const ToDoItem = ({ToDo, handleUpdateToDo, handleCompleteToDo, handleDeleteToDo}) => {
     return (
         <li>

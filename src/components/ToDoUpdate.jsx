@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { FaEdit } from "react-icons/fa";
 import { useForm } from "../hooks/UseForm";
 
-
+//EDITAR TAREA
 export const ToDoUpdate = ({ToDo, handleUpdateToDo}) => {
     
     const {updateDescription, onInputChange} = useForm({
@@ -30,7 +30,7 @@ export const ToDoUpdate = ({ToDo, handleUpdateToDo}) => {
         <form onSubmit={onSubmitUpdate}>
         <input 
         type="text" 
-        className={`input-update ${ToDo.done ? 'text.decoration-dashed' : ''}`} 
+        className={`input-update ${ToDo.done ? 'text-decoration-dashed' : ''}`} 
         name="updateDescription" 
         value={updateDescription}
         onChange={onInputChange}

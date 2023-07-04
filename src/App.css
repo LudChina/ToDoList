@@ -6,22 +6,27 @@
 
 :root {
 	--rojo: #ba181b;
-	--azul: #00b4d8;
-	--azul-hover: #48cae4;
+	--rosa: #fc68b2;
+	--rosa-hover: #fc68b2;
 	--rojo-hover: #e5383b;
 	--verde: #09a129;
 }
 
 body {
-	font-family: Poppins;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	max-width: 1200px;
 	margin: 40px auto;
 	display: flex;
 	justify-content: center;
+	background-image: url('../public/images/img2.jpg');
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .card-to-do {
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	/*box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);*/
 	padding: 25px;
 	border-radius: 20px;
 	width: 700px;
@@ -29,6 +34,7 @@ body {
 
 h1 {
 	text-align: center;
+	color: whitesmoke;
 }
 
 .counter-to-do {
@@ -42,7 +48,7 @@ h1 {
 }
 
 .counter-to-do span {
-	color: #f29559;
+	color: #fff;
 	font-weight: 700;
 	font-size: 24px;
 	margin-left: 10px;
@@ -78,10 +84,12 @@ ul li form {
 
 .input-update {
 	border: none;
+	border-radius: 20px;
+	background-color: transparent;
 	font-weight: 500;
 	font-family: inherit;
 	font-size: 18px;
-	color: #555;
+	color: #fff;
 	width: 100%;
 	/* background-color: #000; */
 	outline: none;
@@ -100,9 +108,9 @@ ul li form {
 	background-color: var(--verde);
 }
 
-/*.text-decoration-dashed {
+.text-decoration-dashed {
 	text-decoration: line-through;
-}*/
+}
 .btn-delete {
 	background-color: var(--rojo);
 	color: #fff;
@@ -122,7 +130,7 @@ ul li form {
 }
 
 .btn-edit {
-	background-color: var(--azul);
+	background-color: var(--rosa);
 	color: #fff;
 	padding: 15px;
 	display: flex;
@@ -136,7 +144,7 @@ ul li form {
 }
 
 .btn-edit:hover {
-	background-color: var(--azul-hover);
+	background-color: var(--rosa-hover);
 }
 
 form {
@@ -164,7 +172,7 @@ form {
 
 .btn-add {
 	border: none;
-	background-color: var(--azul);
+	background-color: var(--rosa);
 	color: #fff;
 	padding: 5px 40px;
 	border-radius: 20px;
@@ -174,7 +182,7 @@ form {
 }
 
 .btn-add:hover {
-	background-color: var(--azul-hover);
+	background-color: var(--rosa-hover);
 }
 
 
